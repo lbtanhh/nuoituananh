@@ -4,6 +4,7 @@ import Comparison from './components/Comparison'
 import MoneyUsage from './components/MoneyUsage'
 import WhySupport from './components/WhySupport'
 import Commitment from './components/Commitment'
+import QRSection from './components/QRSection'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <MoneyUsage />
       <WhySupport />
       <Commitment />
+      <QRSection />
     </div>
   )
 }
