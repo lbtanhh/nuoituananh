@@ -95,6 +95,21 @@
   display: inline-block;
   margin-bottom: 1.5rem;
   box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.qr-badge:hover {
+  background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.6);
+}
+
+.qr-badge:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
 }
 
 .qr-instruction {
@@ -196,6 +211,8 @@
   .qr-badge {
     font-size: 1.1rem;
     padding: 0.8rem 1.5rem;
+    width: 100%;
+    max-width: 300px;
   }
 
   .qr-instruction {

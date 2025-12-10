@@ -3,6 +3,16 @@ import './QRSection.css'
 import qrImage from '../asset/qr.jpg'
 
 function QRSection() {
+  const handleDownloadQR = () => {
+    // Tạo một link ảo để download
+    const link = document.createElement('a')
+    link.href = qrImage
+    link.download = 'QR-Nuoi-Toi.jpg' // Tên file khi download
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section className="qr-section">
       <div className="qr-container">
@@ -20,9 +30,9 @@ function QRSection() {
           </div>
           
           <div className="qr-info">
-            <div className="qr-badge">
-              💳 Quét & Chuyển Khoản
-            </div>
+            <button className="qr-badge" onClick={handleDownloadQR}>
+              📥 Tải QR Về Máy
+            </button>
             <p className="qr-instruction">
               Mở app ngân hàng → Chọn quét QR → Quét mã trên → Nhập số tiền → Xác nhận
             </p>

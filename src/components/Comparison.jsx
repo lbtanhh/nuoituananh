@@ -23,7 +23,7 @@ function Comparison() {
           <div className="comparison-card good">
             <h3 className="card-title">✅ Nuôi Tôi:</h3>
             <ul className="comparison-list">
-              <li>✓ Sao kê trước khi tiêu (dễ ảnh chị duyệt)</li>
+              <li>✓ Sao kê hàng tháng</li>
               <li>✓ File Excel 4K Ultra HD, có chữ ký điện tử</li>
               <li>✓ Số liệu chính xác đến từng đồng</li>
               <li>✓ Trả lời inbox nhanh hơn cả chatbot</li>
