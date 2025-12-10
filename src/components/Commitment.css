@@ -1,0 +1,102 @@
+.commitment {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.commitment-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.commitment-list {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.commitment-list li {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #f3f4f6;
+  transition: background 0.3s ease;
+}
+
+.commitment-list li:hover {
+  background: #fffbeb;
+  padding-left: 1rem;
+  margin: 0 -1rem;
+  border-radius: 10px;
+}
+
+.commitment-list li:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: #10b981;
+  min-width: 40px;
+  margin-right: 1rem;
+}
+
+.commitment-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1f2937;
+}
+
+.commitment-text strong {
+  color: #dc2626;
+  font-weight: 800;
+}
+
+.commitment-footer {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer-note {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .commitment {
+    padding: 3rem 1.5rem;
+  }
+
+  .commitment-list {
+    padding: 2rem 1.5rem;
+  }
+
+  .commitment-list li {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .check-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .commitment-text {
+    font-size: 1rem;
+  }
+
+  .commitment-footer {
+    padding: 1.5rem;
+  }
+
+  .footer-note {
+    font-size: 0.85rem;
+  }
+}
+
